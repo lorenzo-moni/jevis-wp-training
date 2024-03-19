@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wp Training Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body class="home">
+    <!-- HEADER -->
+
+    <header>
+      <nav class="container">
+        <div class="nav__left">
+          <a href="home.html"
+            ><img
+              class="custom-logo"
+              src="/assets/img/logo.png"
+              alt="logo image"
+          /></a>
+          <div class="nav__toggle" id="main-nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+
+        <div class="nav__center">
+          <div id="main-nav-menu" class="nav__menu">
+            <ul class="nav__list">
+              <li class="menu-item">
+                <a href="/home.html">Home</a>
+              </li>
+              <li class="menu-item">
+                <a href="/experiences.html">Experiences</a>
+              </li>
+              <li class="menu-item">
+                <a href="/contacts.html">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav__right">
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="menu-item">
+                <a href="https://instagram.com" target="_blank"
+                  ><i class="ri-instagram-line ri-lg"></i
+                ></a>
+              </li>
+              <li class="menu-item">
+                <a href="https://facebook.com" target="_blank"
+                  ><i class="ri-facebook-line ri-lg"></i
+                ></a>
+              </li>
+              <li class="menu-item">
+                <a href="https://twitter.com" target="_blank"
+                  ><i class="ri-twitter-line ri-lg"></i
+                ></a>
+              </li>
+              <li class="menu-item">
+                <a><i class="ri-search-line ri-lg"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="swup" class="transition-fade">
+      <section class="hero">
+        <div class="hero__video-background">
+          <video autoplay muted loop playsinline data-object-fit="cover">
+            <source src="/assets/videos/drone.mp4" type="video/mp4" />
+          </video>
+          <div class="hero__content-container">
+            <div class="content container">
+              <h1>Vivi un'esperienza da sogno nel cuore dell'Italia</h1>
+              <h2>Con JEVIS Luxury Concierge la tua vacanza è in buone mani</h2>
+              <a class="cta" href="/experiences.html"
+                ><i class="ri-arrow-right-s-line ri-xl"></i> Richiedi una
+                Consulenza</a
+              >
+            </div>
+          </div>
+          <div class="scroll-arrow">
+            <i class="ri-arrow-down-s-line ri-3x"></i>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="bg-half-black py-5">
+          <div class="container">
+            <div class="grid">
+              <div class="col-6">
+                <div class="col-content white">
+                  <h2>Lorem ipsum dolor sit amet</h2>
+                  <h4>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut
+                  </p>
+                  <a class="cta" href="/experiences.html">Scopri di Più</a>
+                </div>
+                <div class="image-wrapper mt-5">
+                  <img src="/assets/img/img2.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="image-wrapper">
+                  <img src="/assets/img/img1.jpg" alt="" />
+                </div>
+                <div class="col-content mt-5 black">
+                  <h2>Lorem ipsum dolor sit amet</h2>
+                  <h4>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut
+                  </p>
+                  <a class="cta" href="/experiences.html">Scopri di Più</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="section__header">
+          <h3>Esperienze in Evidenza</h3>
+          <a class="cta d-sm-none" href="/experiences.html"
+            >Tutte le Esperienze</a
+          >
+        </div>
+
+        <div class="experiences-grid">
+          <div class="featured-card" data-card-type="vertical">
+            <div class="featured-card__image">
+              <img src="/assets/img/exp1.jpg" alt="Experience 1" />
+              <div class="featured-card__location">
+                <i class="ri-map-pin-line"></i>
+                <span>Marina di Grosseto</span>
+              </div>
+            </div>
+            <div class="featured-card__content">
+              <div>
+                <div class="featured-card__tags">
+                  <a
+                    class="featured-card__tag"
+                    style="background-color: #0090cd"
+                    >Sea</a
+                  >
+                </div>
+                <span class="featured-card__title">Snorkeling</span>
+                <p class="featured-card__excerpt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cupiditate id exercitationem libero ea unde iusto corrupti
+                  officiis pariatur hic ducimus provident
+                </p>
+              </div>
+              <div>
+                <a class="featured-card__cta" href="/single.html"
+                  >Prenota Ora</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="featured-card" data-card-type="horizontal">
+            <div class="featured-card__image">
+              <img src="/assets/img/exp2.jpg" alt="Experience 2" />
+              <div class="featured-card__location">
+                <i class="ri-map-pin-line"></i>
+                <span>San Giovanni all'Avena</span>
+              </div>
+            </div>
+            <div class="featured-card__content">
+              <div>
+                <div class="featured-card__tags">
+                  <a
+                    class="featured-card__tag"
+                    style="background-color: #2e7951"
+                    >Mountaneering</a
+                  >
+                </div>
+                <span class="featured-card__title">Trekking</span>
+                <p class="featured-card__excerpt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cupiditate id exercitationem libero ea unde iusto corrupti
+                  officiis pariatur hic ducimus provident.
+                </p>
+              </div>
+              <div>
+                <a class="featured-card__cta" href="/single.html"
+                  >Prenota Ora</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="featured-card" data-card-type="horizontal">
+            <div class="featured-card__image">
+              <img src="/assets/img/exp3.jpg" alt="Experience 3" />
+              <div class="featured-card__location">
+                <i class="ri-map-pin-line"></i>
+                <span>Florence</span>
+              </div>
+            </div>
+            <div class="featured-card__content">
+              <div>
+                <div class="featured-card__tags">
+                  <a
+                    class="featured-card__tag"
+                    style="background-color: #7e135a"
+                    >Sea</a
+                  >
+                </div>
+                <span class="featured-card__title">Wine Tasting</span>
+                <p class="featured-card__excerpt">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cupiditate id exercitationem libero ea unde iusto corrupti
+                  officiis pariatur hic ducimus provident.
+                </p>
+              </div>
+              <div>
+                <a class="featured-card__cta" href="/single.html"
+                  >Prenota Ora</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container my-5">
+        <div class="grid">
+          <div class="col-6">
+            <h2>Contattaci per prenotare la tua Esperienza su Misura</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate id exercitationem libero ea unde iusto corrupti
+              officiis pariatur hic ducimus provident.
+            </p>
+            <a class="cta" href="/experiences.html">Contattaci</a>
+          </div>
+          <div class="col-6">
+            <div class="image-wrapper--full">
+              <img
+                src="/assets/img/cta.jpg"
+                class="image-rect"
+                alt="contact us"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="footer__container">
+            <div class="footer__info">
+              <a href="/home.html"
+                ><img
+                  class="custom-logo"
+                  src="/assets/img/logo.png"
+                  alt="logo image"
+              /></a>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="footer__menu">
+                <ul class="footer__list">
+                  <li class="menu-item">
+                    <a href="https://instagram.com" target="_blank"
+                      ><i class="ri-instagram-line ri-2x"></i
+                    ></a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="https://facebook.com" target="_blank"
+                      ><i class="ri-facebook-line ri-2x"></i
+                    ></a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="https://twitter.com" target="_blank"
+                      ><i class="ri-twitter-x-line ri-2x"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__col">
+              <span>Jevis Luxury</span>
+              <ul>
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/experiences.html">Experiences</a></li>
+                <li><a href="/contacts.html">Contacts</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <span>Experiences</span>
+              <ul>
+                <li><a href="/single.html">Snorkeling</a></li>
+                <li><a href="/single.html">Trekking</a></li>
+                <li><a href="/single.html">Wine Tasting</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <span>Legal</span>
+              <ul>
+                <li><a href="/privacy.html">Privacy Policy</a></li>
+                <li><a href="/cookie.html">Cookie Policy</a></li>
+                <li><a href="/terms.html">Terms and Services</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <span>Info</span>
+              <ul>
+                <li>P.IVA XXXXXXXXX</li>
+                <li>info@jevis.it</li>
+                <li>Via del Risorgimento</li>
+              </ul>
+            </div>
+          </div>
+          <p class="mt-2">© JEVIS Luxury 2024 | All Rights Reserved.</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+
+  <script src="https://unpkg.com/swup@4"></script>
+  <script src="/assets/js/script.js"></script>
+</html>
