@@ -74,4 +74,3 @@ handleScroll("main-nav-menu");
 swup.hooks.on("content:replace", () => {
   handleResize();
 });
-AOS.init();
