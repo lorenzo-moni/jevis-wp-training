@@ -45,6 +45,16 @@ const handleScroll = (navId) => {
   }
 };
 
+const handleArrowButtons = () => {
+  const buttons = document.querySelectorAll(".cta.has-arrow");
+  console.log(buttons);
+  buttons.forEach((el) => {
+    const iconNode = document.createElement("i");
+    iconNode.classList = "ri-arrow-right-s-line ri-xl";
+    el.prepend(iconNode);
+  });
+};
+
 const options = {
   animateHistoryBrowsing: true,
   animationSelector: '[class*="transition-"]',
@@ -71,6 +81,9 @@ handleResize();
 window.addEventListener("scroll", () => handleScroll("main-nav-menu"));
 handleScroll("main-nav-menu");
 
+handleArrowButtons();
+
 swup.hooks.on("content:replace", () => {
   handleResize();
+  handleArrowButtons();
 });
