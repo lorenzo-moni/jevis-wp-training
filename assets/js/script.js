@@ -45,13 +45,33 @@ const handleScroll = (navId) => {
   }
 };
 
-const handleArrowButtons = () => {
+const handleCustomElements = () => {
   const buttons = document.querySelectorAll(".cta.has-arrow");
-  console.log(buttons);
+
   buttons.forEach((el) => {
     const iconNode = document.createElement("i");
     iconNode.classList = "ri-arrow-right-s-line ri-xl";
     el.prepend(iconNode);
+  });
+
+  const formSubmitButtons = document.querySelectorAll(".wpcf7 .wpcf7-submit");
+
+  formSubmitButtons.forEach((el) => {
+    const parent = el.closest("p");
+    const iconNode = document.createElement("i");
+    iconNode.classList = "ri-send-plane-fill ri-xl";
+    el.prepend(iconNode);
+  });
+
+  const hero_covers = document.querySelectorAll(".hero");
+  hero_covers.forEach((el) => {
+    const scrollArrowNode = document.createElement("div");
+    scrollArrowNode.classList = "scroll-arrow";
+    const iconNode = document.createElement("i");
+    iconNode.classList = "ri-arrow-down-s-line ri-3x";
+
+    scrollArrowNode.appendChild(iconNode);
+    el.appendChild(scrollArrowNode);
   });
 };
 
@@ -81,9 +101,9 @@ handleResize();
 window.addEventListener("scroll", () => handleScroll("main-nav-menu"));
 handleScroll("main-nav-menu");
 
-handleArrowButtons();
+handleCustomElements();
 
 swup.hooks.on("content:replace", () => {
   handleResize();
-  handleArrowButtons();
+  handleCustomElements();
 });

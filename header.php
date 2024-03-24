@@ -13,7 +13,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <!-- HEADER -->
 
   <header>
     <nav class="container">
@@ -34,7 +33,7 @@
       <div class="nav__center">
         <?php
         wp_nav_menu(array(
-          'theme_location' => 'main-header',
+          'theme_location' => 'main-menu',
           'container' => 'div',
           'container_id' => 'main-nav-menu',
           'container_class' => 'nav__menu',
@@ -44,22 +43,18 @@
         ?>
       </div>
       <div class="nav__right">
-        <div class="nav__menu">
-          <ul class="nav__list">
-            <li class="menu-item">
-              <a href="https://instagram.com" target="_blank"><i class="ri-instagram-line ri-lg"></i></a>
-            </li>
-            <li class="menu-item">
-              <a href="https://facebook.com" target="_blank"><i class="ri-facebook-line ri-lg"></i></a>
-            </li>
-            <li class="menu-item">
-              <a href="https://twitter.com" target="_blank"><i class="ri-twitter-line ri-lg"></i></a>
-            </li>
-            <li class="menu-item">
-              <a><i class="ri-search-line ri-lg"></i></a>
-            </li>
-          </ul>
-        </div>
+
+        <?php
+        wp_nav_menu(array(
+          'theme_location' => 'social-menu',
+          'container' => 'div',
+          'container_id' => 'social-nav-menu',
+          'container_class' => 'nav__menu',
+          'menu_class' => 'nav__list',
+          'depth' => 1
+        ));
+        ?>
+
       </div>
     </nav>
   </header>
