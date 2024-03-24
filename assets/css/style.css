@@ -120,8 +120,17 @@ header {
   transition: background-color 0.5s ease;
 }
 
+header.transparent {
+  background-color: transparent;
+  box-shadow: none;
+}
+
 nav {
   height: 3.5rem;
+}
+
+nav > div {
+  width: 30%;
 }
 
 .nav__burger,
@@ -178,6 +187,20 @@ nav {
   transition: background-color 0.3s;
 }
 
+.nav__center,
+.nav__right {
+  display: flex;
+  height: 100%;
+}
+.nav__right {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav__center {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 1118px) {
   .nav__menu {
     position: absolute;
@@ -205,6 +228,9 @@ nav {
   }
   .nav__right {
     display: none;
+  }
+  .nav__left {
+    width: 100%;
   }
 }
 
@@ -249,17 +275,6 @@ nav {
     padding: 0;
     justify-content: initial;
   }
-}
-
-.nav__center,
-.nav__right {
-  display: flex;
-  height: 100%;
-}
-
-header.transparent {
-  background-color: transparent;
-  box-shadow: none;
 }
 
 /*----------------
