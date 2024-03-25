@@ -54,15 +54,6 @@ const handleCustomElements = () => {
     el.prepend(iconNode);
   });
 
-  const formSubmitButtons = document.querySelectorAll(".wpcf7 .wpcf7-submit");
-
-  formSubmitButtons.forEach((el) => {
-    const parent = el.closest("p");
-    const iconNode = document.createElement("i");
-    iconNode.classList = "ri-send-plane-fill ri-xl";
-    el.prepend(iconNode);
-  });
-
   const hero_covers = document.querySelectorAll(".hero");
   hero_covers.forEach((el) => {
     const scrollArrowNode = document.createElement("div");
