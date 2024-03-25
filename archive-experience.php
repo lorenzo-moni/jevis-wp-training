@@ -1,5 +1,4 @@
 <?php
-
 $image_url = wp_get_attachment_image_url(78, 'full')
 ?>
 

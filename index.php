@@ -8,7 +8,6 @@
         //Getting Post Thumbnail
         $backgroundImg = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'full'); ?>
 
-
         <section class="page__header">
             <div class="header__background" style="background-image: url('<?php echo $backgroundImg[0] ?>')">
                 <div class="header__content">
@@ -16,8 +15,6 @@
                 </div>
             </div>
         </section>
-
-
 
         <section class="page__content container">
             <?php the_content() ?>
