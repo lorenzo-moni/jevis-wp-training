@@ -54,8 +54,8 @@ const handleCustomElements = () => {
     el.prepend(iconNode);
   });
 
-  const hero_covers = document.querySelectorAll(".hero");
-  hero_covers.forEach((el) => {
+  const heroCovers = document.querySelectorAll(".hero");
+  heroCovers.forEach((el) => {
     const scrollArrowNode = document.createElement("div");
     scrollArrowNode.classList = "scroll-arrow";
     const iconNode = document.createElement("i");
